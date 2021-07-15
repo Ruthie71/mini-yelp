@@ -1,0 +1,44 @@
+{
+    "restaurants": [
+        {
+            "id": 1,
+            "name": "Float",
+            "category": ["spa", "cooffe"],
+            "address": "Hausvogteiplatz 11 10117",
+            "city": "Berlin",
+            "location": [23.5, 12.3],
+            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/3b0iIiV-6ZncLtwICOEYFw/l.jpg",
+            "description": "A very good place to have a coffee or a tea. Also good for a walk."
+        },
+        {
+            "id": 2,
+            "name": "Gong",
+            "category": ["beer", "vegetarian"],
+            "address": "Hausvogteiplatz 11 10117",
+            "city": "Stutgart",
+            "location": [23.5, 12.3],
+            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/8xiHhk-Q7_zNc255GhiSPw/ls.jpg",
+            "description": "A very good place to have a coffee or a tea. Also good for a walk."
+        },
+        {
+            "id": 3,
+            "name": "Rajan",
+            "category": ["indian"],
+            "address": "Hausvogteiplatz 11 10117",
+            "city": "London",
+            "location": [23.5, 12.3],
+            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/l_5xYJaAEVtXf9aynz6n-g/ls.jpg",
+            "description": "A very good place to have a coffee or a tea. Also good for a walk."
+        },
+        {
+            "id": 4,
+            "name": "La Buvette",
+            "category": ["desert", "spa"],
+            "address": "Hausvogteiplatz 11 10117",
+            "city": "Paris",
+            "location": [23.5, 12.3],
+            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/mua7kYG0DujM-tpwuOgtUg/ls.jpg",
+            "description": "A very good place to have a coffee or a tea. Also good for a walk."
+        }
+    ]
+}

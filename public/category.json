@@ -1,0 +1,28 @@
+{
+    "category": [
+        {
+            "id": 1,
+            "name": "beer"
+        },
+        {
+            "id": 2,
+            "name": "wine"
+        },
+        {
+            "id": 3,
+            "name": "spa"
+        },
+        {
+            "id": 4,
+            "name": "indian"
+        },
+        {
+            "id": 5,
+            "name": "desert"
+        },
+        {
+            "id": 6,
+            "name": "cooffe"
+        }
+    ]
+}
