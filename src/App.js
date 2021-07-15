@@ -16,21 +16,21 @@ const App = () => {
     const [error, setError] = useState(null);
     const [results, setResults] = useState(null);
 
-    useEffect(() => {
-        axios
-            .get("/restaurants.json")
-            .then((response) => {
-                console.log(response.data);
-                //setItems(response.data);
-                //setLoading(false);
-            })
-            .catch((error) => {
-                console.log(error);
-                //   setError(error);
-                //   setLoading(false);
-                //   setTimeout(() => setError(null), 3000);
-            });
-    }, []);
+    // useEffect(() => {
+    //     axios
+    //         .get("/restaurants.json")
+    //         .then((response) => {
+    //             console.log(response.data);
+    //             setItems(response.data);
+    //             //setLoading(false);
+    //         })
+    //         .catch((error) => {
+    //             console.log(error);
+    //             //   setError(error);
+    //             //   setLoading(false);
+    //             //   setTimeout(() => setError(null), 3000);
+    //         });
+    // }, []);
 
     //   if (loading) return <Loading />;
     //   if (error) return <Error error={error} />;
@@ -42,6 +42,7 @@ const App = () => {
             <Router>
                 <Switch>
                     <Route path="/" component={Home} />
+                    <Route path="/results" component={Results} />
                 </Switch>
             </Router>
         </>
