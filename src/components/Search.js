@@ -25,6 +25,14 @@ const Search = ({ setQuery }) => {
                 />
                 <input type="submit" />
             </form>
+
+            {/* {restaurants.map(restaurants)} => (
+                    <Restaurants 
+                        restaurants={restaurants} 
+                        key={restaurants.id}
+                        name={}
+                    />
+                ) */}
         </>
     );
 };
