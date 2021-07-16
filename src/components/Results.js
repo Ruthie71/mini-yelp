@@ -8,30 +8,29 @@ import { makeStyles, TextField, Grid } from "@material-ui/core";
 const useStyles = makeStyles({
     container: {
         padding: 10,
-        margin: '0 auto', 
-        textAlign: 'center',
-        width: '100%',
+        margin: "0 auto",
+        textAlign: "center",
+        width: "100%",
     },
-        root: {
-        margin: '60px auto',
-
+    root: {
+        margin: "60px auto",
     },
     textField: {
-        width: '80%',
-        margin: '40px auto',
-        textAlign: 'center'
-    }
-})
+        width: "80%",
+        margin: "40px auto",
+        textAlign: "center",
+    },
+});
 
 const Results = () => {
-    const classes = useStyles()
+    const classes = useStyles();
     const [restaurants, setRestaurants] = useState("");
     const [loading, setLoading] = useState(true);
     const [input, setInput] = useState("");
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        setError(false)
+        setError(false);
         setLoading(true);
         axios
             .get("https://yelp-backend-crossover.herokuapp.com/restaurants")
@@ -42,7 +41,7 @@ const Results = () => {
             })
             .catch((err) => {
                 console.log(err);
-                setError(true)
+                setError(true);
                 setLoading(false);
             });
     }, []);
@@ -55,9 +54,9 @@ const Results = () => {
                 className={classes.textField}
                 variant="outlined"
                 size="medium"
-                align='center'
+                align="center"
                 label="Search for Restaurants ..."
-                color='secondary'
+                color="secondary"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
             />
@@ -73,13 +72,11 @@ const Results = () => {
                                 .includes(input.toLowerCase())
                         ) {
                             return restaurant;
-                        {/* } else {
-                             console.log('error')
-                        } */}
-                    }})
+                        }
+                    })
                     .map((restaurant) => (
                         <Grid container spacing={3} clasName={classes.root}>
-                         <Restaurants restaurant={restaurant} />
+                            <Restaurants restaurant={restaurant} />
                         </Grid>
                     ))}
         </div>
