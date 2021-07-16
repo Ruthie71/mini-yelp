@@ -1,49 +1,34 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Results from "./components/Results";
-//import Search from "./components/Search";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Loading from "./components/Loading";
 import Nav from "./components/Nav";
 import Error from "./components/Error";
 import Search from "./components/Search";
+import Tag from "./components/Tag";
 import Tags from "./components/Tags";
+import City from "./components/City";
 import Cities from "./components/Cities";
 import Restaurant from "./components/Restaurant";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
 
 const App = () => {
-    // useEffect(() => {
-    //     axios
-    //         .get("/restaurants.json")
-    //         .then((response) => {
-    //             console.log(response.data);
-    //             setItems(response.data);
-    //             //setLoading(false);
-    //         })
-    //         .catch((error) => {
-    //             console.log(error);
-    //             //   setError(error);
-    //             //   setLoading(false);
-    //             //   setTimeout(() => setError(null), 3000);
-    //         });
-    // }, []);
 
-    //   if (loading) return <Loading />;
-    //   if (error) return <Error error={error} />;
 
     return (
         <Router>
             <Nav />
             <Switch>
-                <Route exact path="/" component={Search} />
-                <Route exact path="/restaurants" component={Results} />
+                <Route exact path="/" component={Results} />
+                {/* <Route exact path="/restaurants" component={Results} /> */}
                 <Route exact path="/restaurants/:id" component={Restaurant} />
                 <Route exact path="/tags" component={Tags} />
-                {/* <Route exact path='/tags/:name' component={Tag} /> */}
-                <Route exact path="/cities" component={Cities} />
+                <Route exact path='/tags/:name' component={Tag} />
+                <Route exact path='/cities' component={Cities} />
+                <Route exact path="/cities/:name" component={City} />
             </Switch>
             <Footer />
         </Router>

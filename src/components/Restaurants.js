@@ -5,10 +5,18 @@ import {
     CardContent,
     Button,
     Typography,
+    Grid
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
+    container: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexWrap: 'wrap',
+        marginBottom: 60
+    },
     image: {
         width: "100%",
     },
@@ -22,7 +30,7 @@ const Restaurants = ({ restaurant }) => {
     const classes = useStyles();
     console.log(restaurant);
     return (
-        <div>
+        <Grid item xs={12} className={classes.container}>
             <Card
                 key={restaurant.id}
                 variant="outlined"
@@ -47,7 +55,7 @@ const Restaurants = ({ restaurant }) => {
                     </Button>
                 </CardContent>
             </Card>
-        </div>
+        </Grid>
     );
 };
 
