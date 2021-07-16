@@ -8,13 +8,13 @@ import Loading from "./components/Loading";
 import Nav from "./components/Nav";
 import Error from "./components/Error";
 import Search from "./components/Search";
-import Restaurant from "./components/Restaurants";
+import Tags from "./components/Tags";
+import Cities from "./components/Cities";
+import Restaurant from "./components/Restaurant";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
 
 const App = () => {
-   
-
     // useEffect(() => {
     //     axios
     //         .get("/restaurants.json")
@@ -35,15 +35,18 @@ const App = () => {
     //   if (error) return <Error error={error} />;
 
     return (
-            <Router>
-                <Nav />
-                <Switch>
-                    <Route exact path="/" component={Search} />
-                    <Route path="/restaurants" component={Results} />
-                    <Route path='/restaurants/:id' component={Restaurant} />
-                </Switch>
-                <Footer />
-            </Router>
+        <Router>
+            <Nav />
+            <Switch>
+                <Route exact path="/" component={Search} />
+                <Route exact path="/restaurants" component={Results} />
+                <Route exact path="/restaurants/:id" component={Restaurant} />
+                <Route exact path="/tags" component={Tags} />
+                {/* <Route exact path='/tags/:name' component={Tag} /> */}
+                <Route exact path="/cities" component={Cities} />
+            </Switch>
+            <Footer />
+        </Router>
     );
 };
 
