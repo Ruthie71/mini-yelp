@@ -1,33 +1,33 @@
 import React from "react";
+import { makeStyles, Card, CardContent,Button,  Typography } from "@material-ui/core"
+import { useHistory } from 'react-router-dom'
 
-const Restaurants = ({ restaurants }) => {
-    console.log(restaurants);
+const useStyles = makeStyles({
+    image: {
+        width: '100%',
+    },
+    card: {
+        width: '300px'
+    }
+})
+
+const Restaurants = ({ restaurant }) => {
+    const history = useHistory()
+    const classes = useStyles()
+    console.log(restaurant);
     return (
         <div>
-            <div>
-                <h1>Restaurants</h1>
-            </div>
-            <div>
-                <h2>{restaurants.name}</h2>
-            </div>
-            <div>
-                <p>{restaurants.city}}</p>
-            </div>
-            <div>
-                <p>c{restaurants.category}</p>
-                <ul>
-                    <li>fist line address</li>
-                    <li>second line address</li>
-                    <li>code</li>
-                </ul>
-            </div>
-            <div>
-                <p>description</p>
-            </div>
-            <div>
-                <img>image</img>
-            </div>
-            <div></div>
+            <Card key={restaurant.id} variant='outlined' className={classes.card} >
+                <CardContent>
+                    <img src={restaurant.image_url} className={classes.image} 
+                    />
+                    <Typography variant='h6'>{restaurant.name}</Typography>
+                    <Typography variant='body1'>{restaurant.city}</Typography>
+                    <Typography variant='body1'>{restaurant.tag}</Typography>
+                    <Typography variant='body1'>{restaurant.description}</Typography>
+                    <Button variant='contained' color='secondary' onClick={() => history.push(`/restaurants/${restaurant.id}`)}>Show</Button>
+                </CardContent>
+            </Card>
         </div>
     );
 };

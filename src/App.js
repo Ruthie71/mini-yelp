@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 import Results from "./components/Results";
 //import Search from "./components/Search";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 import Loading from "./components/Loading";
+import Nav from "./components/Nav";
 import Error from "./components/Error";
+import Search from "./components/Search";
+import Restaurant from "./components/Restaurants";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
 
 const App = () => {
-    const [items, setItems] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-    const [results, setResults] = useState(null);
+   
 
     // useEffect(() => {
     //     axios
@@ -36,16 +35,15 @@ const App = () => {
     //   if (error) return <Error error={error} />;
 
     return (
-        <>
-            {loading && <Loading />}
-            {error && <Error />}
             <Router>
+                <Nav />
                 <Switch>
-                    <Route path="/" component={Home} />
-                    <Route path="/results" component={Results} />
+                    <Route exact path="/" component={Search} />
+                    <Route path="/restaurants" component={Results} />
+                    <Route path='/restaurants/:id' component={Restaurant} />
                 </Switch>
+                <Footer />
             </Router>
-        </>
     );
 };
 

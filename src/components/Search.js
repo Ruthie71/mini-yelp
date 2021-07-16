@@ -1,40 +1,35 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+// import { TextField, Button } from '@material-ui/core'
 
-const Search = ({ setQuery }) => {
-    const [input, setInput] = useState("");
+// const Search = () => {
+//     const [input, setInput] = useState("");
 
-    const handleChange = (event) => {
-        setInput(event.target.value);
-    };
+//     const handleChange = (event) => {
+//         setInput(event.target.value);
+//     };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        if (!input) return alert("Search cannot be empty");
-        setQuery(input);
-        setInput("");
-    };
+//     const handleSubmit = (event) => {
+//         event.preventDefault();
+//         if (!input) return alert("Search cannot be empty");
+//         console.log(input)
+//         // setQuery(input);
+//         // setInput("");
+//     };
 
-    return (
-        <>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    value={input}
-                    onChange={handleChange}
-                    placeholder="Search..."
-                />
-                <input type="submit" />
-            </form>
+//     return (
+//         <div style={{margin: '100px auto', textAlign: 'center'}}>
+//             <form onSubmit={handleSubmit}>
+//                 <TextField
+//                     size='small'
+//                     variant="outlined"
+//                     value={input}
+//                     onChange={handleChange}
+//                     label="Search..."
+//                 /> 
+//                 <Button variant="contained" color="secondary" onClick={handleSubmit} >Submit</Button>
+//             </form>
+//         </div>
+//     );
+// };
 
-            {/* {restaurants.map(restaurants)} => (
-                    <Restaurants 
-                        restaurants={restaurants} 
-                        key={restaurants.id}
-                        name={}
-                    />
-                ) */}
-        </>
-    );
-};
-
-export default Search;
+// export default Search;

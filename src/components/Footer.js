@@ -1,9 +1,14 @@
 import React from "react";
+import { BottomNavigation, Typography } from '@material-ui/core'
 
 const Footer = () => {
     return (
         <div>
-            <h1>Footer</h1>
+            <BottomNavigation color="secondary" >
+                  <Typography variant="body2" >
+                Crafted with ❤️ by Ruth & Minja
+                </Typography>
+            </BottomNavigation>
         </div>
     );
 };

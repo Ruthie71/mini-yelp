@@ -2,43 +2,104 @@
     "restaurants": [
         {
             "id": 1,
-            "name": "Float",
-            "category": ["spa", "cooffe"],
-            "address": "Hausvogteiplatz 11 10117",
+            "name": "Hubertha",
+            "tag": "vietnamese",
             "city": "Berlin",
-            "location": [23.5, 12.3],
-            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/3b0iIiV-6ZncLtwICOEYFw/l.jpg",
-            "description": "A very good place to have a coffee or a tea. Also good for a walk."
+            "image_url": "https://cdn.pixabay.com/photo/2016/03/09/15/22/food-1246621_1280.jpg",
+            "description": "The best vietnamese restaurant in Berlin",
+            "lat": 52.456366,
+            "lon": 13.332496
         },
         {
             "id": 2,
-            "name": "Gong",
-            "category": ["beer", "vegetarian"],
-            "address": "Hausvogteiplatz 11 10117",
-            "city": "Stutgart",
-            "location": [23.5, 12.3],
-            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/8xiHhk-Q7_zNc255GhiSPw/ls.jpg",
-            "description": "A very good place to have a coffee or a tea. Also good for a walk."
+            "name": "Spice",
+            "tag": "vietnamese",
+            "city": "Berlin",
+            "image_url": "https://cdn.pixabay.com/photo/2014/10/01/09/09/duck-468159_1280.jpg",
+            "description": "The best vietnamese restaurant in Berlin",
+            "lat": 52.498604,
+            "lon": 13.391799
         },
         {
             "id": 3,
-            "name": "Rajan",
-            "category": ["indian"],
-            "address": "Hausvogteiplatz 11 10117",
-            "city": "London",
-            "location": [23.5, 12.3],
-            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/l_5xYJaAEVtXf9aynz6n-g/ls.jpg",
-            "description": "A very good place to have a coffee or a tea. Also good for a walk."
+            "name": "Gary Danko",
+            "tag": "french",
+            "city": "San Francisco",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/CPc91bGzKBe95aM5edjhhQ/o.jpg",
+            "description": "A very nice French restaurant in San Francisco’s city center",
+            "lat": 37.80587,
+            "lon": -122.42058
         },
         {
             "id": 4,
-            "name": "La Buvette",
-            "category": ["desert", "spa"],
-            "address": "Hausvogteiplatz 11 10117",
+            "name": "Da Pippo",
+            "tag": "italian",
+            "city": "Berlin",
+            "image_url": "https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg",
+            "description": "A very tasty Italian restaurant in Berlin",
+            "lat": 52.531677,
+            "lon": 13.381777
+        },
+        {
+            "id": 5,
+            "name": "Koshari",
+            "tag": "egyptian",
             "city": "Paris",
-            "location": [23.5, 12.3],
-            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/mua7kYG0DujM-tpwuOgtUg/ls.jpg",
-            "description": "A very good place to have a coffee or a tea. Also good for a walk."
-        }
+            "image_url": "https://media.istockphoto.com/photos/koshari-picture-id148409148",
+            "description": "A very tasty Egyptian restaurant in Paris",
+            "lat": 48.870502,
+            "lon": 2.304897
+            },
+            {
+            "id": 6,
+            "name": "Bombay Restaurant",
+            "tag": "indian",
+            "city": "London",
+            "image_url": "https://media.istockphoto.com/photos/table-top-view-of-indian-food-picture-id1249893854",
+            "description": "A very delicious indian restaurant in London.",
+            "lat": 51.536388,
+            "lon": -0.140556
+            },
+            {
+            "id": 7,
+            "name": "Orchidee",
+            "tag": "vietnamese",
+            "city": "Halle",
+            "image_url": "https://speisekarte.menu/restaurants/halle-saale/anh-asia-1",
+            "description": "A very nice Vietnamese restaurant in Halle city center",
+            "lat": 51.483334,
+            "lon": 11.966667
+            },
+            {
+            "id": 8,
+            "name": "Varanasi Street Food",
+            "tag": "indian",
+            "city": "London",
+            "image_url": "https://cdn.pixabay.com/photo/2018/12/04/16/49/indian-food-3856044_1280.jpg",
+            "description": "A very tasty Indian restaurant in London",
+            "lat": 51.433727,
+            "lon": -0.214443
+            },
+            {
+            "id": 9,
+            "name": "Le Cinq",
+            "tag": "french",
+            "city": "Paris",
+            "image_url": "https://cdn.pixabay.com/photo/2016/12/11/22/41/lasagna-1900529_1280.jpg",
+            "description": "A very expensive French restaurant in Paris",
+            "lat": 48.864716,
+            "lon": 2.349014
+            },
+            {
+            "id": 10,
+            "name": "Lasagne della mamma",
+            "tag": "italian",
+            "city": "Berlin",
+            "image_url": "https://cdn.pixabay.com/photo/2016/12/11/22/41/lasagna-1900529_1280.jpg",
+            "description": "The best homemade lasagne in Berlin",
+            "lat": 52.520008,
+            "lon": 13.404954
+            }
+                
     ]
 }
