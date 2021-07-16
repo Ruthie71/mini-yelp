@@ -1,29 +1,28 @@
 import React from "react";
 import {
-    BottomNavigation,
-    Typography,
-    BottomNavigationAction,
+    Typography, makeStyles
 } from "@material-ui/core";
-import { LabelIcon, LocationCity } from "@material-ui/icons";
+
+const useStyles = makeStyles({
+    footer: {
+        position: 'stick',
+        bottom: 20,
+        margin: '50px 0 0 0',
+        width: '100%',
+        textAlign: 'center',
+        padding: '10px 0 10px 0',
+
+    },
+})
+
 
 const Footer = () => {
+    const classes = useStyles()
     return (
-        <div>
-            <BottomNavigation color="secondary">
-                <BottomNavigationAction
-                    label="Tags"
-                    value="tags"
-                    icon={LabelIcon}
-                />
-                <BottomNavigationAction
-                    label="Cities"
-                    value="cities"
-                    icon={LocationCity}
-                />
-                <Typography variant="body2">
+        <div className={classes.footer}>
+                <Typography variant="body1">
                     Crafted with ❤️ by Ruth & Minja
                 </Typography>
-            </BottomNavigation>
         </div>
     );
 };
