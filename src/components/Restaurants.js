@@ -5,7 +5,7 @@ import {
     CardContent,
     Button,
     Typography,
-    Grid
+    Grid,
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
@@ -14,8 +14,8 @@ const useStyles = makeStyles({
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        flexWrap: 'wrap',
-        marginBottom: 60
+        flexWrap: "wrap",
+        marginBottom: 60,
     },
     image: {
         width: "100%",
